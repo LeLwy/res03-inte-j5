@@ -9,11 +9,11 @@ html{
     body{
       
         background: $gradient-top-left;
+        height: 100vh;
         
         a{
             text-decoration: none;
             color: $white;
-            font-size: .9rem;
         }
         
         h1, h2, h3, h4, h5{
@@ -21,34 +21,35 @@ html{
         }
         
         h2{
-            font-size: 2.5rem;
+            font-size: 3rem;
             text-transform: uppercase;
         }
         
         h3{
-            font-size: .8rem;
+            font-size: 1.2rem;
             font-weight: bold;
             color: $palatinate-purple;
         }
         
         h4{
-            font-size: .9rem;
+            font-size: 1.2rem;
             color: $neonBlue;
         }
         
         h5{
-            font-size: .7rem;
+            font-size: .9rem;
         }
         
         p{
             color: $white;
-            font-size: 1.4rem;
+            font-size: 1.5rem;
             font-weight: bold;
         }
       
         &>header{
             
             padding: 3vh 40vw 3vh 10vw;
+            border-bottom: solid 1px $neonBlue;
             
             &>h1{
                 display: none;

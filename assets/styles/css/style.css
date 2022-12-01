@@ -60,38 +60,39 @@ html {
 }
 html body {
   background: linear-gradient(225deg, #7400b8, #6930c3, #5e60ce, #5390d9, #4ea8de, #48bfe3, #56cfe1);
+  height: 100vh;
 }
 html body a {
   text-decoration: none;
   color: #ffffff;
-  font-size: 0.9rem;
 }
 html body h1, html body h2, html body h3, html body h4, html body h5 {
   color: #ffffff;
 }
 html body h2 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   text-transform: uppercase;
 }
 html body h3 {
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   font-weight: bold;
   color: #7400b8;
 }
 html body h4 {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   color: #64dfdf;
 }
 html body h5 {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
 }
 html body p {
   color: #ffffff;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 html body > header {
   padding: 3vh 40vw 3vh 10vw;
+  border-bottom: solid 1px #64dfdf;
 }
 html body > header > h1 {
   display: none;
