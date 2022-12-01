@@ -74,10 +74,13 @@ html body h2 {
   text-transform: uppercase;
 }
 html body h3 {
-  font-size: 1rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #7400b8;
 }
 html body h4 {
   font-size: 0.9rem;
+  color: #64dfdf;
 }
 html body h5 {
   font-size: 0.7rem;
@@ -106,29 +109,55 @@ html body main {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+html body main section:first-of-type {
+  padding: 15vh 12vw;
+}
+html body main section:last-of-type {
+  padding: 15vh 5vw;
+}
 html body main section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 15vh 2vw;
 }
 html body main section > article {
-  background-color: #006466;
-  opacity: 0.3;
+  width: fit-content;
+  padding: 1vh 1vw;
+  background-color: rgba(0, 0, 0, 0.2);
 }
-html body main section > article h3 {
-  position: absolute;
+html body main section > article > header {
+  border-bottom: solid 1px #64dfdf;
+  padding-bottom: 1vh;
+}
+html body main section > article > header h3 {
+  position: relative;
+  top: 1.8rem;
+}
+html body main section > article > header #album-img {
+  max-height: 3rem;
+  margin-left: 3.5vw;
+  position: relative;
+  top: 0.7rem;
+}
+html body main section > article ul {
+  padding: 0 1vw;
 }
 html body main section > article ul li {
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding: 1vh 0;
+  border-bottom: solid 1px #006466;
+}
+html body main section > article ul li h5:not(:first-of-type) {
+  font-size: 0.5rem;
 }
 html body main section > article ul li img {
   max-height: 1.2rem;
+  margin-right: 0.5vw;
 }
-html body main section > article ul li #album-img {
-  max-height: 3rem;
+html body main section > article ul li:last-of-type {
+  border: none;
 }
 
 /*# sourceMappingURL=style.css.map */

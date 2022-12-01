@@ -26,11 +26,14 @@ html{
         }
         
         h3{
-            font-size: 1rem;
+            font-size: .8rem;
+            font-weight: bold;
+            color: $palatinate-purple;
         }
         
         h4{
             font-size: .9rem;
+            color: $neonBlue;
         }
         
         h5{
@@ -75,44 +78,69 @@ html{
             display: grid;
             grid-template-columns: 1fr 1fr;
             
+            section:first-of-type{
+                padding: 15vh 12vw;
+            }
+            
+            section:last-of-type{
+                padding: 15vh 5vw;
+            }
+            
             section{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                padding: 15vh 2vw;
                 
                 &>article{
                         
-                        background-color: $skobeloff;
-                        opacity: .3;
+                        width: fit-content;
+                        padding: 1vh 1vw;
+                        background-color: rgba(0, 0, 0, .2);
+                        
+                    &>header{
+                        
+                        border-bottom: solid 1px $neonBlue;
+                        padding-bottom: 1vh;
                     
-                    h3{
-                        position: absolute;
+                        h3{
+                            position: relative;
+                            top: 1.8rem;
+                        }
+                                 
+                        #album-img{
+                            max-height: 3rem;
+                            margin-left: 3.5vw;
+                            position: relative;
+                            top: .7rem;
+                        }
+                        
                     }
                     
                     ul{
+                        
+                        padding: 0 1vw;
                         
                         li{
                             
                             display: flex;
                             flex-direction: row;
                             align-items: center;
-                            
-                             h4{
-                                 
-                             }
+                            padding: 1vh 0;
+                            border-bottom: solid 1px $skobeloff;
                              
-                             h5{
-                                 
+                             h5:not(:first-of-type){
+                                 font-size: .5rem;
                              }
                              
                              img{
                                  max-height: 1.2rem;
+                                 margin-right: .5vw;
                              }
                              
-                             #album-img{
-                                 max-height: 3rem;
-                             }
+                        }
+                        
+                        li:last-of-type{
+                            border: none;
                         }
                     }
                 }
