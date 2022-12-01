@@ -1,0 +1,122 @@
+@import "vars";
+@import "reset";
+
+html{  
+    
+  font-size: 16px;
+  font-family: $mainFont;
+  
+    body{
+      
+        background: $gradient-top-left;
+        
+        a{
+            text-decoration: none;
+            color: $white;
+            font-size: .9rem;
+        }
+        
+        h1, h2, h3, h4, h5{
+            color: $white;
+        }
+        
+        h2{
+            font-size: 2.5rem;
+            text-transform: uppercase;
+        }
+        
+        h3{
+            font-size: 1rem;
+        }
+        
+        h4{
+            font-size: .9rem;
+        }
+        
+        h5{
+            font-size: .7rem;
+        }
+        
+        p{
+            color: $white;
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+      
+        &>header{
+            
+            padding: 3vh 40vw 3vh 10vw;
+            
+            &>h1{
+                display: none;
+            }
+            
+            nav{
+                
+                ul{
+                    
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                
+                    li{
+                        
+                        a{
+                            font-weight: bold;
+                            font-size: 1.1rem;
+                        }
+                    }
+                }
+            }
+        }
+        
+        main{
+            
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            
+            section{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 15vh 2vw;
+                
+                &>article{
+                        
+                        background-color: $skobeloff;
+                        opacity: .3;
+                    
+                    h3{
+                        position: absolute;
+                    }
+                    
+                    ul{
+                        
+                        li{
+                            
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            
+                             h4{
+                                 
+                             }
+                             
+                             h5{
+                                 
+                             }
+                             
+                             img{
+                                 max-height: 1.2rem;
+                             }
+                             
+                             #album-img{
+                                 max-height: 3rem;
+                             }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
