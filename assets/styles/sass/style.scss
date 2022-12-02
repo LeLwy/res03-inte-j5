@@ -20,6 +20,11 @@ html{
             color: $white;
         }
         
+        h1{
+            font-size: 4rem;
+            font-weight: bold;
+        }
+        
         h2{
             font-size: 3rem;
             text-transform: uppercase;
@@ -143,6 +148,18 @@ html{
                         li:last-of-type{
                             border: none;
                         }
+                    }
+                }
+                
+                &#pricing{
+                    grid-column: 1/3;
+                    height: 100%;
+                    display: grid;
+                    grid-template-rows: 1fr 5fr;
+                    grid-template-colums: 1fr 1fr 1fr
+                    
+                    &>h1{
+                        grid-column: 1/4;
                     }
                 }
             }
